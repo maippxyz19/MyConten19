@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Lilita+One&display=swap');
+*, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 1000px;
+}
+
+/* Navbar Start */
+.container {
+    display: flex;
+    background-color: #808080;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 2px solid #333;
+    z-index: 1;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    padding: 1.2rem;
+    color: #fff;
+    font-family: 'Lilita One', cursive;
+    text-shadow: 8px 8px 5px black, 
+                 9px 9px 7px #fff;
+}
+
+.container h2 span {
+    color: lightgreen;
+}
+
+ul {
+    list-style: none;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 1rem;
+    color: #fff;
+    font-size: 1.3em;
+    font-family: 'Lilita One', cursive;
+    transition: all 0.5s;
+    text-shadow: 5px 5px 5px black, 
+                 6px 6px 6px lightgray,
+                 7px 7px 7px rgba(255, 3, 3, 0.5);
+}
+
+ul li a::after {
+    content:'';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid lightgreen;
+    transform: scaleX(0);
+    transition: 0.3s linear;
+    box-shadow: 5px 5px 5px black, 
+                6px 6px 6px lightgray,
+                7px 7px 7px rgba(255, 3, 3, 0.5);
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+    box-shadow: 5px 5px 5px black, 
+                6px 6px 6px lightgray,
+                7px 7px 7px rgba(255, 3, 3, 0.5);
+}
+
+ul li a:hover {
+    color: lightgreen;
+}
+/* Navbar End */
+
+
+/* Hero Start */
+.container-hero {
+    padding: 1.4rem;
+    background-color: #a9a9a9;
+    min-height: 100vh;
+}
+
+.hero {
+    position: relative;
+    padding: 1em;
+}
+
+
+.hero h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 5em;
+    padding: 1.15em;
+    color: #fff;
+    text-shadow: 5px 5px 5px black, 
+                 6px 6px 5px #333;
+    text-align: center;
+}
+
+.hero h3 span {
+    color: #333;
+    text-shadow: 3px 3px 5px white, 
+                 4px 4px 5px #fff, 
+                 5px 5px 5px black;
+}
+
+.hero .kata {
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 1px 1px 1px white, 
+                 2px 2px 2px lightgray;
+}
+
+.hero img {
+    margin: 1rem auto;
+    transition: all .7s;
+    position: absolute;
+    left: 0;
+}
+
+.hero img:hover {
+    transform: scale(1.03);
+}
+/* Hero End */
+
+
+/* about Start */
+.container-about {
+    min-height: 100vh;
+    background-color: gray;
+    position: relative;
+}
+
+.h3-about {
+    text-align: center;
+    padding: 1.4em;
+    font-family: 'Caveat', cursive;
+    font-size: 5em;
+    color: #333;
+    text-shadow: 5px 5px 5px white, 
+                 6px 6px 5px #fff;
+}
+
+.h3-about span {
+    color: #fff;
+    text-shadow: 3px 3px 5px black, 
+                 4px 4px 5px #333, 
+                 5px 5px 5px white;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em 0;
+}
+
+.parent .gambar img {
+    width: 170px;
+    padding: 0.7rem;
+    margin-right: 7rem;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px black,
+                1.5px 1.5px 1.5px white,
+                2px 2px 2px whitesmoke;
+    border: 2px solid whitesmoke;
+    filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: 0.7s linear;
+}
+
+.parent .gambar img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
+
+.parent .kalimat p {
+    padding: 0.7rem 4rem;
+    box-sizing: border-box;
+    font-family: 'Lilita One', cursive;
+    font-size: 1.1em;
+}
+/* About End */
+
+/* Contact Start */
+.container-contact {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+.container-contact h3 {
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    padding: 1.4em;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 5px 5px 5px black, 
+                 6px 6px 5px #333;
+}
+
+.container-contact h3 span {
+    color: #333;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    text-shadow: 5px 5px 5px white, 
+                 6px 6px 5px #fff;
+}
+
+.container-contact .kontak {
+    width: 100%;
+}
+
+.container-contact .kontak form {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.container-contact .kontak form .input-group {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    width: 50%;
+    margin: auto;
+}
+
+.container-contact .kontak form .input-group input {
+    width: 100%;
+    padding: 1rem;
+    background: none;
+    font-size: 1.2em;
+    margin: 0.5rem;
+    color: black;
+    font-family: 'Lilita One', cursive;
+    box-shadow: 2px 2px 2px black,
+                3px 3px 3px white,
+                4px 4px 4px #333,
+                5px 5px 5px #fff,
+                5.5px 5.5px 5.5px gray;
+                
+}
+
+.container-contact .kontak form .btn {
+    display: inline-block;
+    font-size: 1.2em;
+    margin-top: 1.3rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    color: black;
+    background-color: lightgray;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black, 
+                3px 3px 3px #fff,
+                3.5px 3.5px 3.5px #333;
+    transition: 0.4s linear;
+    font-family: 'Lilita One', cursive;
+}
+
+.container-contact .kontak form .btn:hover {
+    transform: scale(1.1);
+    background-color: rgb(0, 255, 0);
+}
+/* contact End */
+
+/* Footer Start */
+footer {
+    background-color: #808080;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: black;
+}
+
+footer .socials .WA:hover {
+    color: rgb(0, 255, 0);
+    transition: 0.4s linear;
+}
+
+footer .socials .email:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.4s linear;
+}
+
+footer .socials .IG:hover {
+    color: #ff00bfe1;
+    transition: 0.4s linear;
+}
+
+footer .socials .tik-tok:hover {
+    color: #fff;
+    transition: 0.4s linear;
+}
+
+footer .socials .FB:hover {
+    color: rgb(0, 0, 255);
+    transition: 0.4s linear;
+}
+
+footer .links {
+    margin-bottom: 0.5rem;
+} 
+
+footer .links a {
+    color: #333;
+    padding: 0.5rem;
+    text-decoration: none;
+    transition: 0.4s linear;
+    font-size: 1.07em;
+}
+
+footer .links a:hover {
+    color: white;
+}
+
+footer .credit {
+    font-size: 1.1em;
+    padding: 0.3rem 0;
+}
+
+footer .credit a {
+    color: #fff;
+}
+
+
+/* Footer End */
+
+/* Media Query */
+/* tablet */
+@media (max-width: 760px) {
+    html {
+        font-size: 75%;
+    }
+
+    .parent {
+        
+    }
+
+    .parent .gambar {
+        padding: 2rem 0;
+    }
+
+    .parent .gambar img {
+        filter: grayscale(0);
+        box-shadow: 0.5px 0.5px 0.5px black,
+                1px 1px 1px white,
+                1.5px 1.5px 1.5px whitesmoke;
+        border: 0.5px solid whitesmoke;
+    }
+
+    .parent .gambar img:hover {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+
+    .container-contact .kontak form .input-group {
+        width: 70%;
+    }
+
+
+}
+
+/* mobile */
+@media (max-width: 560px) {
+    html {
+        font-size: 60%;
+    }
+
+    .hero img{
+        width: 250px;
+    }
+
+    .gambar {
+        width: 150px;
+    }
+
+    .parent {
+        flex-wrap: wrap-reverse;
+    }
+
+    .parent .gambar {
+        padding: 2rem 0;
+    }
+
+    .parent .gambar img {
+        width: 130px;
+        filter: grayscale(0);
+        box-shadow: 0.5px 0.5px 0.5px black,
+                1px 1px 1px white,
+                1.5px 1.5px 1.5px whitesmoke;
+        border: 0.5px solid whitesmoke;
+    }
+
+    .parent .gambar img:hover {
+        transform: scale(1);
+        filter: grayscale(0);
+    }
+
+    .container-contact .kontak form .input-group {
+        width: 70%;
+    }
+
+}
+
+/* 331px */
+@media (max-width: 331px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+
+/* 315px */
+@media (max-width: 315px) {
+    html {
+        font-size: 53%;
+    }
+}
